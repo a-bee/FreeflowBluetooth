@@ -1,0 +1,9 @@
+This repository contains code for the Android app component of the Freeflow Project.
+
+./freeflowbluetooth
+This is the android app eclipse project.
+Requires Android SDK, Java, Eclipse
+
+./client
+This is the python code for the bluetooth client.
+Requires Python 2.7, pybluez
