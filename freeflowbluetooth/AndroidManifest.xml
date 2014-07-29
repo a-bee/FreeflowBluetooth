@@ -25,6 +25,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+	        android:name="info.canthub.freeflowbluetooth.displayDataActivity"
+	        android:label="displayData"
+	        android:parentActivityName="info.canthub.freeflowbluetooth.MainActivity" >
+	        <meta-data
+	            android:name="android.support.PARENT_ACTIVITY"
+	            android:value="info.canthub.freeflowbluetooth.MainActivity" />
+    	</activity>
     </application>
 
 </manifest>

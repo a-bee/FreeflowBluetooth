@@ -1,0 +1,13 @@
+<TableLayout android:id="@+id/LinearLayout01"
+    xmlns:android="http://schemas.android.com/apk/res/android"   
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1">
+
+    <TableRow>
+        <!-- <TextView android:id="@+id/label_measure"  style="@style/TextMedium" android:text="@string/row_weight" android:paddingRight="15dp"/>           -->
+        <TextView android:id="@+id/date" style="@style/TextMedium" android:paddingRight="20dp"/>  
+        <TextView android:id="@+id/measure" style="@style/TextLarge" />            
+    </TableRow>
+    
+</TableLayout>

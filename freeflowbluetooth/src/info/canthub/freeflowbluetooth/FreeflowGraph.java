@@ -30,7 +30,7 @@ public class FreeflowGraph extends View {
 		}
 	}
 	
-	public void giveData(String data) {
+	public ArrayList<Float> giveData(String data) {
 		ArrayList<Float> newdata = new ArrayList<Float>();
 		for (String val : Arrays.asList(data.split("\\s*,\\s*"))) {
 			newdata.add(Float.parseFloat(val));
@@ -38,6 +38,7 @@ public class FreeflowGraph extends View {
 		alldata.add(newdata);
 		if (alldata.size() > getWidth()/4) alldata.remove(0);
 		invalidate();
+		return newdata;
 	}
 
 	@Override

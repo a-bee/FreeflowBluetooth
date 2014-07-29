@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
         android:orientation="vertical" >
 
         <TextView
@@ -56,12 +56,25 @@
             android:visibility="visible" >
         </ListView>
 
-        <Button
-            android:id="@+id/connectButton"
+        <LinearLayout
+            android:id="@+id/buttons"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:onClick="connect"
-            android:text="@string/connect" />
+            android:layout_height="wrap_content" >
+            
+	        <Button
+	            android:id="@+id/connectButton"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:onClick="connect"
+	            android:text="@string/connect" />
+	
+	        <Button
+	            android:id="@+id/disp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/displayData" />
+	        
+        </LinearLayout>
 
         <TextView
             android:id="@+id/serialStatus"

@@ -9,17 +9,17 @@ if len(matches) == 0:
     raw_input("No matching service found!")
     sys.exit(0)
 
-print "%i matching services found! Taking first" %len(matches)
+print ("%i matching services found! Taking first" %len(matches))
 server = matches[0]
 name = server["name"]
 port = server["port"]
 host = server["host"]
 
-print "Connecting to %s on %s" %(name, host)
+print ("Connecting to %s on %s" %(name, host))
 sock = bt.BluetoothSocket(bt.RFCOMM)
 sock.connect((host, port))
 
-print "Connected. Data will be sent..."
+print ("Connected. Data will be sent...")
 data = [0.5 for x in range(5)];
 while True:
     for i,d in enumerate(data):

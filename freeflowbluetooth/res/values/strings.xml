@@ -8,5 +8,7 @@
    <string name="connect">Connect to Python</string>
    <string name="Visible">Make Visible</string>
    <string name="List">List Devices</string>
+   <string name="displayData">View database</string>
+   <string name="row_weight">Weight</string>
 
 </resources>
